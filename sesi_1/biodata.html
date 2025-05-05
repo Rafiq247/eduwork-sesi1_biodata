@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Biodata</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Section 1: Navbar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Section 2: Selamat Datang */
+        .welcome-section {
+            display: flex;
+            padding: 40px 20px;
+            align-items: center;
+            background-color: white;
+        }
+
+        .welcome-left {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .welcome-left h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .welcome-right {
+            flex: 1;
+            text-align: right;
+        }
+
+        .welcome-right img {
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Section 3: About Me */
+        .about-section {
+            padding: 40px 20px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .about-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .about-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        .about-box h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        /* Section 4: Portfolio */
+        .portfolio-section {
+            padding: 40px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .portfolio-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 350px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                /* Hide menu on smaller screens */
+            }
+
+            .welcome-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .welcome-left,
+            .welcome-right {
+                flex: none;
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            .welcome-right img {
+                width: 100%;
+                height: auto;
+            }
+
+            .about-boxes {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-box {
+                width: calc(100% - 20px);
+            }
+
+            .portfolio-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .portfolio-item img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="brand">Nama Brand</div>
+        <ul>
+            <li><a href="#header">Header</a></li>
+            <li><a href="#biodata">Biodata</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <section id="header" class="welcome-section">
+        <div class="welcome-left">
+            <h2>Selamat Datang di Profil Saya</h2>
+            <p>Perkenalkan, ini adalah halaman profil biodata saya yang menampilkan informasi pribadi, keahlian, dan
+                beberapa proyek yang telah saya kerjakan.</p>
+        </div>
+        <div class="welcome-right">
+            <img src="https://placehold.jp/600x400.png" alt="Foto Profil">
+        </div>
+    </section>
+
+    <section id="biodata" class="about-section">
+        <h2>Tentang Saya</h2>
+        <p>Berikut adalah beberapa informasi detail mengenai diri saya:</p>
+        <div class="about-boxes">
+            <div class="about-box">
+                <h3>Nama Lengkap</h3>
+                <p>John Doe</p>
+            </div>
+            <div class="about-box">
+                <h3>Pendidikan</h3>
+                <p>Sarjana Komputer</p>
+            </div>
+            <div class="about-box">
+                <h3>Alamat</h3>
+                <p>Jl. Contoh No. 123, Jakarta Utara</p>
+            </div>
+            <div class="about-box">
+                <h3>Pekerjaan</h3>
+                <p>Pengembang Web</p>
+            </div>
+            <div class="about-box">
+                <h3>Kontak</h3>
+                <p>email@contoh.com</p>
+            </div>
+            <div class="about-box">
+                <h3>Hobi</h3>
+                <p>Membaca, Berolahraga</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <p>Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://placehold.jp/350x200.png" alt="Proyek 1">
+                <h3 class="project-title">Proyek Web A</h3>
+                <p>Deskripsi singkat mengenai proyek web A.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://placehold.jp/350x200.png" alt="Proyek 2">
+                <h3 class="project-title">Aplikasi Mobile B</h3>
+                <p>Deskripsi singkat mengenai aplikasi mobile B.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://placehold.jp/350x200.png" alt="Proyek 3">
+                <h3 class="project-title">Desain Grafis C</h3>
+                <p>Deskripsi singkat mengenai desain grafis C.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Profil Biodata</p>
+    </footer>
+</body>
+
+</html>
